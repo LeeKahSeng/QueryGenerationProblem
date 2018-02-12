@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1036" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Object1" representedClassName="Object1" syncable="YES" codeGenerationType="class">
+        <relationship name="obj2" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Object2" inverseName="obj1" inverseEntity="Object2" syncable="YES"/>
+    </entity>
+    <entity name="Object2" representedClassName="Object2" syncable="YES" codeGenerationType="class">
+        <relationship name="obj1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Object1" inverseName="obj2" inverseEntity="Object1" syncable="YES"/>
+        <relationship name="obj3" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Object3" inverseName="obj2" inverseEntity="Object3" syncable="YES"/>
+    </entity>
+    <entity name="Object3" representedClassName="Object3" syncable="YES" codeGenerationType="class">
+        <relationship name="obj2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Object2" inverseName="obj3" inverseEntity="Object2" syncable="YES"/>
+        <relationship name="obj4" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Object4" inverseName="obj3" inverseEntity="Object4" syncable="YES"/>
+    </entity>
+    <entity name="Object4" representedClassName="Object4" syncable="YES" codeGenerationType="class">
+        <relationship name="obj3" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Object3" inverseName="obj4" inverseEntity="Object3" syncable="YES"/>
+        <relationship name="obj5" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Object5" inverseName="obj4" inverseEntity="Object5" syncable="YES"/>
+    </entity>
+    <entity name="Object5" representedClassName="Object5" syncable="YES" codeGenerationType="class">
+        <relationship name="obj4" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Object4" inverseName="obj5" inverseEntity="Object4" syncable="YES"/>
+        <relationship name="obj6" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Object6" inverseName="obj5" inverseEntity="Object6" syncable="YES"/>
+    </entity>
+    <entity name="Object6" representedClassName="Object6" syncable="YES" codeGenerationType="class">
+        <attribute name="now" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="obj5" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Object5" inverseName="obj6" inverseEntity="Object5" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Object1" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Object2" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Object3" positionX="-63" positionY="18" width="128" height="75"/>
+        <element name="Object4" positionX="-54" positionY="27" width="128" height="75"/>
+        <element name="Object5" positionX="-45" positionY="36" width="128" height="75"/>
+        <element name="Object6" positionX="-54" positionY="36" width="128" height="75"/>
+    </elements>
+</model>
